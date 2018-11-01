@@ -13,7 +13,7 @@ In 1939 Ernest Vincent Wright published a 50,000 word novel called Gadsby that d
 
 In fact, it is difficult to construct a solitary thought without using that most common symbol. It is slow going at first, but with caution and hours of training you can gradually gain facility. All right, I’ll stop now. Write a function called has_no_e that returns True if the given word doesn’t have the letter “e” in it.
 
-Write a function *no_e* that prints only the words that have no “e” and compute the percentage of the words in the list that have no “e”.
+Write a function *no_e* that ~~prints~~ counts only the words that have no “e” and compute the percentage of the words in the list that have no “e”.
 
 **Exercise #3** 
 
