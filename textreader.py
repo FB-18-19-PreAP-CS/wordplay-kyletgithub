@@ -69,10 +69,17 @@ def uses_all(word,letters):
     else:
         return False
     
-            
+def how_many_uses_all(letters):
+    count = 0
+    with open("words.txt") as file:
+        for line in file:
+            for word in line.split():
+                if uses_all(word,letters):
+                    count += 1
+    print(count)
 
 
         
 
 if __name__ == "__main__":
-    words_with_only('kyle')
+    how_many_uses_all('aeiou')
