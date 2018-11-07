@@ -78,8 +78,22 @@ def how_many_uses_all(letters):
                     count += 1
     print(count)
 
+def is_abecedarian(word):
+    if len(word) == 1:
+        return True
+    for i in range(len(word)-1):
+        if word[i] > word[i+1]:
+            return False
+    return True
 
-        
+def count_abecedarian():
+    count = 0
+    with open("words.txt") as file:
+        for line in file:
+            for word in line.split():
+                if is_abecedarian(word):
+                    count += 1
+    print(count)
 
 if __name__ == "__main__":
-    how_many_uses_all('aeiou')
+    count_abecedarian()
